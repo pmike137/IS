@@ -9,15 +9,13 @@ const buttonColor = document.querySelector('.block-item__btn')
 signInBtng.addEventListener('click', function() {
     formBox.classList.add('active'); 
     body.classList.add('active');
-    buttonColor.classList.add('active');
-   
-    
+    buttonColor.classList.add('active'); 
 });
 
 signInBtn.addEventListener('click', function() {
     formBox.classList.remove('active');
     body.classList.remove('active');
     buttonColor.classList.remove('active');
-    
-    
 });
+
+

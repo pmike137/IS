@@ -22,7 +22,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-image: url(../Image/background_base.jpg) ;
+    background-image: url(/Image/background_base.jpg) ;
      
     background-size: cover;
 

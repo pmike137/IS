@@ -5,29 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="="X-UA-Compatible content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../homepage/wood.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/homepage/wood/wood.css">
 
 </head>
     <body>
         <div class="container-order">
             <div class="input-box">
                 <form action="#" class="form_form">
-                <p>
-                    <select class="select-css" >
-                        <option>Щебень</option>
-                        <option>Песок</option>
-                        <option>Цемент</option>
-                        <option>Тырса</option>
-                        <option>Ракушка</option>
+                    <div class="inline">
+                
+                        <select class="select-css select-css_1" >
+                            <option>Щебень</option>
+                            <option>Песок</option>
+                            <option>Цемент</option>
+                            <option>Тырса</option>
+                            <option>Ракушка</option>
+                        </select>
+                    
+                        <select class="select-css select-css_2" >
+                            <option>5-20</option>
+                            <option>10-20</option>
+                            <option>20-40</option>
+                            <option>40-70</option>
+                            <option>негабарит</option>
+                        </select>
 
-                    </select>
-                </p>
+                        <select class="select-css select-css_3" >
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    
+                    </div>
                 <p>
                     <input type="text" class="form-input" placeholder="Цена">
                 </p>
                 <p>
-                    <div class="line-in-box inline">
+                    <div class="inline">
                     <input type="text" class="form-input " placeholder="Количество">
                     <input type="text" class="form-input " placeholder="Количество">
                     </div>
@@ -40,7 +57,8 @@
         </div>
         <div class="archive-table-block">
             <table class="archive-content-table" >
-                <thead>
+                
+                <thead class="archive-content-table_1">
                     <tr>
                         <th style="width: 10%">Дата</th>
                         <th style="width: 15%">Наименование</th>
@@ -50,9 +68,9 @@
                         <th style="width: 50%">Стоимость</th>
                     </tr>
                 </thead>
-            </table>
-                <div class="scroll-table">
-                    <table class="scroll-table">
+            <!-- </table> -->
+                <!-- <div class="scroll-table">
+                    <table class="scroll-table"> -->
                         <tbody>
                             <tr>
                                 <th style="width: 10%">02</th>
@@ -177,7 +195,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                <!-- </div> -->
             </table>
         </div>
     </body>

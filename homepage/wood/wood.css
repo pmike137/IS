@@ -14,7 +14,7 @@
 }
 
 body {  
-    background-image: url(../Image/background_wood.jpg) ;
+    background-image: url(/Image/background_wood.jpg) ;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -30,7 +30,6 @@ body {
 .container-table {
     padding-top: 0;
     margin-top: 0;
-    /* vertical-align: top; */
     align-items: center;
     min-height: 300px ;
     background-color: rgba(207, 185, 72, 0.7);
@@ -126,25 +125,26 @@ body {
     margin-top: 0;
     padding-top: 0;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     height: 40%;
     max-height: 300px;
     width: 60%;
     background-color: rgba(207, 185, 72, 0.7);
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    border-bottom: solid 5px white;
     /* padding: 20px; */
 }
 
 .input-box {
-    margin-left: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 0;
     padding-top: 0;
     min-height: 300px;
-    max-width: 300px;
-    min-width: 150px;
+    /* max-width: 300px;
+    min-width: 150px; */
     height: 100%;
-    width: 70%;
-    /* padding: 10px; */
+    width: 100%;
     font-size: 24px;
     border-radius: 20px;
     /* background-color: white; */
@@ -173,6 +173,10 @@ body {
     background-color:  rgba(248, 243, 243, 0.7)
 }
 
+.form-input::-webkit-input-placeholder {
+    color: rgba(255, 0, 0, 0.65);
+}
+
 .btn_input {
     width: 100%;
     height: 30px;
@@ -195,13 +199,25 @@ body {
 
 .select-css {
     width: 100%;
-    display: block;
     font-size: 16px;
     text-align: left;
     border-radius: 20px;
-    box-sizing: border-box;
     box-shadow:  rgba(207, 185, 72, 0.7);
+    
 }
+
+.select-css:not(:last-child){
+    margin-right: 20px;
+}
+
+.select-css_2 {
+    width: 50%;
+}
+
+.select-css_3 {
+    width: 20%;
+}
+
 
 /* .line-in-block {
     display: flex;
@@ -223,16 +239,16 @@ body {
     margin-bottom: 30px;
     padding-top: 0;
     border: solid 2px white;
-    border-radius: 20px;
 
-    /* overflow-x: auto; */
+    /* position: relative; */
 
-    position: relative;
+    overflow-x: scroll;
+
 }
 
-.scroll-table {
+/* .scroll-table {
     overflow: auto; 
-}
+} */
 
 .archive-content-table {
     vertical-align: top;
@@ -241,11 +257,13 @@ body {
     margin: 0;
     font-size: 0.9em;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    /* position: sticky;
+    top: 0; */
+}
 
-   
+.archive-content-table_1 th{
+    position: sticky;
+    top: 0;
 }
 
 .scroll-table tbody tr :hover {
@@ -276,6 +294,7 @@ body {
 
 .inline {
     display: flex;
+    justify-content: space-between;
     flex-wrap: nowrap;
     width: 100%;
 }
