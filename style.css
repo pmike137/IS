@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v24-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v24-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+* {
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(Image/background_base.jpg) ;
+     
+    background-size: cover;
+
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    padding: 40px 0;
+
+    position: relative;
+   
+}
+
+.block {
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgba(140, 0, 0, 0.7);
+    box-shadow: 0 5px 45px rgba(0,0,0, 0.9);
+
+    display: flex;
+    align-items: center;
+    transition: 0,5s;
+}
+
+.block.active{
+    background-color: rgba(192, 192, 192, 0.4);
+}
+
+.block__item {
+    width: 50%;
+}
+
+
+.block-item {
+    text-align: center;
+}
+
+.block-item__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 10px;
+}   
+
+.block-item__btn{
+    border: none;
+    cursor: pointer;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px 20px;
+    background-color: rgba(192 , 192, 192, 0.9);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.block-item__btn.active {
+    background-color: rgba(140, 0, 0, 0.9);
+    color: aliceblue;
+}
+
+
+
+.form-box {
+    background-color: aliceblue;
+    height: 100%;
+    width: 50%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 1);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    transition: 0.5s ease-in-out;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.form-box.active {
+    left: 50%;
+    background-color: rgba(140, 0, 0, 1);
+}
+
+.form {
+    width: 100%;
+    padding: 50px;
+    font-size: 16px;
+
+    position: absolute;
+    transition: 0.5s;
+}
+
+.form_signm {
+    left: 0;
+    transition-delay: 0,2s;
+}
+
+.form_signa {
+    left: 100%;
+    transition-delay: 0s;
+}
+
+.form-box.active .form_signm {
+    left: -100%;
+    transition-delay: 0s;
+}
+
+.form-box.active .form_signa {
+    left: 0;
+    transition-delay: 0,2s;
+}
+
+.form__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #333;
+    font-size: inherit;
+}
+
+.form__btn {
+    font-family: Montserrat;
+    font-style: normal;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    border-radius: 20px;
+    background-color: rgba(140, 0, 0, 1);
+    color: azure;
+    padding: 10px 50px;
+}
+
+.form__btn1 {
+    font-family: Montserrat;
+    font-style: normal;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    border-radius: 20px;
+    background-color: rgba(192 , 192, 192, 1);
+    color: rgba(0, 0, 0, 1);
+    padding: 10px 25px;
+}
+
+.form__forgot {
+    color: #333;
+}
