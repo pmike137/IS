@@ -70,10 +70,55 @@ body {
 
 
 
+/*  ---------    HOME     -----------  */
+
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 800px;
+    height: 200px;
+    min-height: 200px;
+}
+
+.wrap :hover {
+    box-shadow: 500px 0 0 0 rgba(0,0,0,.3) inset;
+    cursor: pointer;
+}
+
+.element_wrap {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 80px;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(207, 185, 72, 0.7);
+    border-radius: 30px;
+    font-size: 32px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.element_wrap a {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    width: 100%;
+    
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*  ---------    SDELKA   -----------  */
-
-
 
 
 
@@ -180,22 +225,27 @@ body {
     border: solid 2px white;
     border-radius: 20px;
 
-    overflow-x: auto ;
+    /* overflow-x: auto; */
 
+    position: relative;
 }
 
 .scroll-table {
-    overflow-x: auto; 
+    overflow: auto; 
 }
 
 .archive-content-table {
     vertical-align: top;
     border-collapse: collapse;
     text-align: center;
-    margin: 25px 0;
+    margin: 0;
     font-size: 0.9em;
     width: 100%;
-    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+   
 }
 
 .scroll-table tbody tr :hover {
